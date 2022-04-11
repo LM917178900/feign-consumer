@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+metadata:
+  service:
+    url: ${metadata_service_url:http://localhost:8080}
+
+
+
+
+

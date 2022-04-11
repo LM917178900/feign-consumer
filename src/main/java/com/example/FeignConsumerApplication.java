@@ -1,10 +1,11 @@
-package com.example.feignconsumer;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-//import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
-//@EnableFeignClients
+//@EnableFeignClients(basePackages = {"com.example"})
+@EnableFeignClients
 @SpringBootApplication
 public class FeignConsumerApplication {
 
