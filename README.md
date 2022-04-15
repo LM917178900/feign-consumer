@@ -31,4 +31,18 @@ url = "${metadata.service.url}"
 7. url 赋值需要如此
 metadata.service.url=${metadata_service_url:http://localhost:8080}
 
+8. feign 传输字符串 有转义符
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.6</version>
+        </dependency>
+        
+        LOGGER.info("before param is  {}",param);
+        if(param.contains("\"")) {
+            param = StringEscapeUtils.unescapeJava(param);
+            param= param.replaceFirst("\"", "");
+            param= param.substring(0,param.length()-1);
+        }
+        LOGGER.info("after param is  {}",param);
 

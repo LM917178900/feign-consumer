@@ -32,10 +32,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.6</version>
+        </dependency>
 
         <dependency>
             <groupId>com.example.feign</groupId>
             <artifactId>feign-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example.feign</groupId>
+            <artifactId>feign-common</artifactId>
             <version>1.0</version>
         </dependency>
 
